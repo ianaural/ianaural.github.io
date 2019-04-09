@@ -1,0 +1,452 @@
+<html>
+	<head>
+		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32"/>
+		<title>IBBN: It's Britney Beach Network</title>
+		<!-- START Style -->
+		<style>
+			body{
+				margin: 0;
+				padding: 0;
+			}
+
+			#headline{
+				padding: 0.8em;
+				color: white;
+				font-family: Roboto, helvetica, arial, sans-serif;
+				background-color: black;
+				background-image: url(headline.png);
+				background-size: cover;
+			}
+
+			#headline h1 {
+				font-weight: 200;
+				font-size: 60px;
+				line-height: 1em;
+				margin-bottom: 0;
+			}
+        
+			#headline h2{
+				font-weight: 200;
+				font-size: 30px;
+				margin-top: 5px;
+			}
+
+			#headline #blurb{
+				font-weight: 300;
+				font-size: 18px;
+			}
+
+			#headline #register{
+				background-color: #D84595;
+				background-color: #D84595;
+				padding: 1em;
+			}
+
+			#headline #register h2{
+				font-weight: 100;
+				padding: 0;
+				margin: 0;
+			}
+
+			#headline #register label{
+				font-size: 1.2em;
+				font-weight: 200;
+				padding-top: 12px;
+				display: block;
+			}
+
+			#headline #register input{
+				width: 100%;
+				font-size: 18px;
+				font-weight: 200;
+				padding: 10px;
+				box-sizing: border-box;
+			}
+
+			#headline #register input[type=submit]{
+				background-color: #2C5EA7;
+				color: white;
+				margin-top: 20px;
+				padding: 10px;
+				border: none;
+				box-sizing: border-box;
+				font-size: 18px;
+			}
+
+			#section1, #section2, #section3{
+				box-sizing: border-box;
+				padding: 20px;
+			}
+
+			#section1 h2, #section2 h2, #section3 h2{
+				margin-top: 0;
+				font-size: 24px
+			}
+
+			#section1{
+				background-color: white;
+				font-family: Roboto, sans-serif;
+				font-weight: 100;
+				font-size: 18px;
+			}
+
+			#section1 h2{
+				font-weight: 300;
+				text-align: center;
+				margin-bottom: 0px;
+				margin-top: 20px;
+			}
+
+			#section1 h2 + p{
+			}
+
+			#section1 video {
+				width: 100%;
+			}
+			
+			#section1 iframe {
+				height: 71.4%;
+				width: 100%;
+			}
+
+			#section2{
+				background-color: #F0AFEA;
+				font-family: Roboto, sans-serif;
+				font-weight: 100;
+				font-size: 18px;
+			}
+
+			#section2 h2{
+				font-weight: 300;
+				text-align: center;
+				margin-bottom: 0px;
+				margin-top: 20px;
+			}
+
+			#section2 h2 + p{
+				text-align: center;
+			}
+
+			#section2 div{
+				text-align: center;
+			}
+
+			#section2 div img{
+				width: 100%
+			}
+
+			#section3{
+				background-color: #DE7CD6;
+				font-family: Roboto, sans-serif;
+				font-weight: 100;
+				text-align: center;
+				margin: auto;
+			}
+
+			#section3 h2{
+				font-weight: 300;
+				text-align: center;
+				margin-bottom: 0px;
+				margin-top: 20px;
+			}
+
+			#section3 h2 + p{
+				text-align: center;
+			}
+
+			#section3 figure{
+				text-align: center;
+			}
+
+			#section3 figure figcaption{
+				text-align: center;
+				font-weight: 400;
+			}
+
+			footer{
+				font-family: Roboto, sans-serif;
+				font-weight: 300;
+				text-align: center;
+				background-color: #2C5EA7;
+				color: white;
+				padding-bottom: 20px;
+				padding-top: 20px;
+			}
+
+			table{
+				margin-top: 26px;
+				width: 100%;
+			}
+			
+			thead{
+				font-weight: bold;
+			}
+
+			tbody{
+				text-align: center;
+			}
+<!--
+      /* START Table CSS */
+      @media screen and (max-width: 600px) {
+        table thead {
+          display: none;
+        }
+
+        table td {
+          display: block;
+          position: relative;
+          padding-left: 50%;
+          padding-top: 13px;
+          padding-bottom: 13px;
+          text-align: left;
+          background: #e9e9e9;
+        }
+
+        table td:before {
+          content: attr(data-th) " :";
+          display: inline-block;
+          color: #000000;
+          background: #e9e9e9;
+          border-right: 2px solid transparent;
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          width: 33%;
+          max-height: 100%;
+
+          font-size: 16px;
+          font-weight: 300;
+          padding-left: 13px;
+          padding-top: 13px;
+        }
+      }
+      /* END Table CSS */
+
+      @media screen and (min-width: 600px) {
+          #headline {
+            padding: 20px 5%;
+          }
+          
+          .container {
+            margin: auto;
+            max-width: 800px;
+          }
+
+          #headline #blurb {
+            float: left; 
+            font-weight: 200;
+            width: 50%;
+            font-size: 18px;
+            box-sizing: border-box;
+            padding-right: 10px;
+          }
+
+          #headline br {
+            clear: both;
+          }
+
+          #headline #register {
+            float:right;
+            padding: 20px;
+            width: 50%;
+            box-sizing: border-box;
+            font-weight: 300;
+          }
+          
+          #section1 #section2, #section3 {
+            box-sizing: border-box;
+            padding: 10px 20% 80px 20%;
+          }
+          
+          #section1 h2, #section2 h2, #section3 h2  {
+            margin-top: 0;
+            font-size: 60px
+          }
+          
+          #section1 ul {
+            box-sizing: border-box;
+            float: left;
+            width: 50%;
+            padding-right: 1em;
+          }
+          
+          #section1 video {
+            box-sizing: border-box;
+            width: 50%;
+            float: right;
+          }
+		  
+		  #section1 iframe {
+            box-sizing: border-box;
+			height: 35.7%;
+            width: 50%;
+            float: left;
+          }
+
+          #section1 br {
+            clear: both;
+          }
+          
+          #section2 div img {
+            width: 30%;
+            margin: 1%;
+            box-sizing: border-box;
+            border-radius: 50% 50%;
+            box-shadow: black 0px 0px 5px;
+          }
+        }
+-->
+		</style>
+		<!-- END Style -->
+	</head>
+	
+	
+	<body>   
+		<!-- S headline -->
+		<div id="headline">
+			<div class="container">
+				<header>
+					<h1>It's Britney Beach Network</h1>
+					<p>The Gimme More Hour of Prayer Session Experiences</p>
+				</header>
+				<div id="blurb">
+					<p>So you don't know a thing about Britney? You don't know a thing about 'Hit Me Baby"? You don't know about 'Oops... I Did It'? You don't know about the hair whipping? You don't know about 'Lucky'? You don't know about 'Sometimes'? You don't Frappe drinks?</p>
+					<p>Then, shame on you!</p>
+					<p>Luckily, we from IBBN - It's Britney Beach Network - is here to help you with our first cross-platform membersite that include courses to educate on our goddess deity Britney Jean Spears!</p>
+					<p>These courses will focus on getting you to familiarize with all things about Britney; her <i>her</i>-story, her discography and her chops, as well as all exculsive insights including:</p>
+					<ul>
+						<li>the Ts...</li>
+						<li>the shades...</li>
+						<li>and all in between, if you know what we mean.</li>
+					</ul>
+				</div>
+				<form method="post" id="register">
+					<h2>Sign up as an IBBN Member!</h2>
+						<label for="name">Name</label>
+							<input type="text" name="name" id="name" placeholder="Derrick B. Barry" required="">
+						<label for="email">Email address</label>
+							<input type="email" name="email" id="email" placeholder="bjspears@example.com" required="">
+						<label for="tel">Telephone</label>
+							<input type="tel" name="tel" id="tel" placeholder="(+60) 777 7777" required="">
+						<input type="submit" value="Sign up">
+				</form>
+				<br>
+			</div>
+		</div>
+    <!-- E headline -->
+
+    <!-- S section1 -->
+	<div id="section1">
+		<div class="container">
+			<h2>Why should I join?</h2>
+			<p>After joining as a member of IBBN, you'll have the privileges to share your love and admirations and worships to our deity - the Holy Britney Jean Spears. Not only that, by joining as IBBN member you could give back to somebody who has given so much by donating to The Leave Britney Alone Foundation.</p>
+			<p>Your offerings towards The Leave Britney Alone Foundation will help supply:</p>
+			<ul>
+				<li>Frappuccinos, frothy and delicious</li>
+				<li>car seats and safety belts</li>
+				<li>funds towards lost pop-star conversions to Britney</li>
+			</ul>
+			<br>
+			<video controls="" poster="trailer.png">
+				<source src="trailer.mp4" type="video/mp4">
+				<source src="trailer.webm" type="video/webm">
+				<p>Sorry your browser doesn't support video.</p>
+			</video>
+			
+			<iframe src="https://www.youtube.com/embed/9jNKLW2XDdI">
+			</iframe>
+			<br>
+		</div>
+	</div>
+    <!-- E section1 -->
+
+    <!-- S section2 -->
+	<div id="section2">
+		<div class="container">
+			<h2>Who will be there to guide me?</h2>
+			<p>We have talented and beautiful in-house drag queens that would be happy to guide you throughout the experiences.</p>
+			<p>Though, we thought you might like to check on their credentials by clicking their pictures.</p>
+			<div id="images">
+				<a href="https://www.instagram.com/ninawest/" target="_blank"><img src="ninawest.png" alt="Nina West" title="Nina West"></a>
+				<a href="https://www.instagram.com/bhytes/" target="_blank"><img src="brookelynnhytes.png" alt="Brooke Lynn Hytes" title="Brooke Lynn Hytes"></a>
+				<a href="https://www.instagram.com/vanessavanjie/" target="_blank"><img src="vanessavanjiemateo.png" alt="Vanessa Vanjie Mateo" title="Vanessa Vanjie Mateo"></a>
+				<br>
+				<a href="https://www.instagram.com/arielversace/" target="_blank"><img src="arielversace.png" alt="Ariel Versace" title="Ariel Versace"></a>
+				<a href="https://www.instagram.com/silkyganache/" target="_blank"><img src="silkynutmegganache.png" alt="Silky Nutmeg Ganache" title="Silky Nutmeg Ganache"></a>
+			</div>
+			<br>
+		</div>
+	</div>
+    <!-- E section2 -->
+
+    <!-- S section3 -->
+	<div id="section3">
+		<div class="container">
+			<h2>Why should I care about Britney?</h2>
+			<p>Why won't you? Have you ever listened to "Crazy"?</p>
+			<br>
+			<audio controls loop>
+				<source src="crazy.ogg" type="audio/ogg">
+				<source src="crazy.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+			<table>
+				<caption>
+				<p>All-Time Britney Spears' Top <a href="https://en.wikipedia.org/wiki/Britney_Spears_discography">Discography</a></p>
+				</caption>
+				<thead>
+					<tr>
+						<th>Studio Album</th>
+						<th>US</th>
+						<th>UK</th>
+						<th>AUS</th>
+					</tr>
+				</thead>
+				<colgroup>
+					<col span="1">
+					<col span="1">
+					<col span="1">
+					<col span="1">
+				</colgroup>
+				<tbody>
+				<tr>
+					<td data-th="Studio Album"><a href="https://en.wikipedia.org/wiki/...Baby_One_More_Time_(album)">...Baby One More Time</a></td>
+					<td data-th="US">#1</td>
+					<td data-th="UK">#2</td>
+					<td data-th="AUS">#2</td>
+				</tr>
+				<tr>
+					<td data-th="Studio Album"><a href="https://en.wikipedia.org/wiki/Oops!..._I_Did_It_Again_(album)">Oops!... I Did It Again</a></td>
+					<td data-th="US">#1</td>
+					<td data-th="UK">#2</td>
+					<td data-th="AUS">#2</td>
+				</tr>
+				<tr>
+					<td data-th="Studio Album"><a href="https://en.wikipedia.org/wiki/Britney_(album)">Britney</a></td>
+					<td data-th="US">#1</td>
+					<td data-th="UK">#4</td>
+					<td data-th="AUS">#4</td>
+				</tr>
+				<tr>
+					<td data-th="Studio Album"><a href="https://en.wikipedia.org/wiki/Femme_Fatale_(Britney_Spears_album)">Femme Fatale</a></td>
+					<td data-th="US">#1</td>
+					<td data-th="UK">#8</td>
+					<td data-th="AUS">#1</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+    <!-- E section3 -->
+ 
+    <!-- S footer -->
+	<footer>
+		<div class="container">
+			<p>All Copyrights © Britney Spears + RuPaul Drag Race Season 11 + Ralph S. Bug</p>
+		</div>
+	</footer>
+    <!-- E footer -->
+	
+	</body>
+</html>
